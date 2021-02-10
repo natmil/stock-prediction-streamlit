@@ -6,12 +6,12 @@ from fbprophet import Prophet
 from fbprophet.plot import plot_plotly
 from plotly import graph_objs as go
 
-START = "2018-01-01"
+START = "1985-01-01"
 TODAY = date.today().strftime("%Y-%m-%d")
 
 st.title('Stock Forecast App')
 
-stocks = ('NET', 'CLOV', 'SNDL', 'FTCH')
+stocks = ('NET', 'CLOV', 'SNDL', 'FTCH', 'KO', 'FUBO')
 selected_stock = st.selectbox('Select dataset for prediction', stocks)
 
 n_years = st.slider('Years of prediction:', 1, 10)
